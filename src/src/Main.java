@@ -82,6 +82,14 @@ public class Main {
         System.out.print("Enter your age. ");
         String user_age = scanner.nextLine();
 
+        if (Integer.parseInt(user_age) < 21) {
+            int x = 21-Integer.parseInt(user_age);
+
+
+            System.out.println("Hey there bucko, you gotta be 21 or older around these parts. Come back in "+x+" years, alright?");
+            return;
+        }
+
         System.out.print("Enter your email address. ");
         String user_email_address = scanner.nextLine();
 
